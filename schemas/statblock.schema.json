@@ -1,0 +1,51 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/Kavarus-System/kavarus-schemas/blob/main/schema/statblock.schema.json",
+    "type": "object",
+    "properties": {
+        "strength": {
+            "type": "number",
+            "default": 0
+        },
+        "intelligence": {
+            "type": "number",
+            "default": 0
+        },
+        "dexterity": {
+            "type": "number",
+            "default": 0
+        },
+        "intimidation": {
+            "type": "number",
+            "default": 0
+        },
+        "perception": {
+            "type": "number",
+            "default": 0
+        },
+        "perceptionRange": {
+            "type": "number",
+            "default": 0
+        },
+        "health": {
+            "type": "number",
+            "default": 0
+        },
+        "maxHealth": {
+            "type": "number",
+            "default": 0
+        },
+        "armor": {
+            "type": "number",
+            "default": 0
+        },
+        "maxArmor": {
+            "type": "number",
+            "default": 0
+        },
+        "inspirationVolume": {
+            "type": "number",
+            "default": 0
+        }
+    }
+}
