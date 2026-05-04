@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/Kavarus-System/kavarus-schemas/blob/main/schema/statblock.schema.json",
+    "$id": "https://raw.githubusercontent.com/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/statblock.schema.json",
     "type": "object",
     "properties": {
         "strength": {
@@ -40,6 +40,10 @@
             "default": 0
         },
         "maxArmor": {
+            "type": "number",
+            "default": 0
+        },
+        "inspiration": {
             "type": "number",
             "default": 0
         },

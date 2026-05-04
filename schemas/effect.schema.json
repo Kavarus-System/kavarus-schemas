@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effect.schema.json",
+    "type": "object",
+    "properties": {
+        "trigger": {
+            "$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/triggers/triggers.schema.json"
+        },
+        "effect": {
+            "$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effects/anyeffect.schema.json"
+        }
+    },
+    "required": ["trigger", "effect"]
+}

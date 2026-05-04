@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/triggers/onskill.schema.json",
+    "type": "object",
+    "properties": {
+        "checkstat": {
+            "enum": ["strength","intelligence","dexterity","intimidation","perception"]
+        },
+        "target": {
+            "enum": [
+                "any",
+                "$parent"
+            ]
+        },
+        "action": {
+            "enum": ["cleareffect"]
+        }
+    },
+    "dependentRequired": {
+        "action": ["target"]
+    },
+    "minProperties": 1
+}

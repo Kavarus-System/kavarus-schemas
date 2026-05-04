@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effects/statmod.schema.json",
+    "type": "object",
+    "properties": {
+        "flat": {
+            "type": "integer",
+            "default": 0
+        },
+        "mult": {
+            "type": "number",
+            "default": 1
+        },
+        "reverse": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "minProperties": 1
+}

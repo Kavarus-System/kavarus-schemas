@@ -1,0 +1,10 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/triggers/triggers.schema.json",
+    "type": "object",
+    "properties": {
+        "onskill": {"$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/triggers/onskill.schema.json"},
+        "random": {"$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/triggers/random.schema.json"}
+    },
+    "minProperties": 1
+}

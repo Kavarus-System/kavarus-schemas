@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effects/anyeffect.schema.json",
+    "type": "object",
+    "properties": {
+        "rollmod": {"$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effects/rollmod.schema.json"},
+        "statmod": {"$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effects/statmod.schema.json"},
+        "flavor": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "minProperties": 1
+}
