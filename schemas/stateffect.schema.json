@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/stateffect.schema.json",
+    "type": "object",
+    "properties": {
+        "effects": {
+            "type": "array",
+            "items": {"$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effects/anyeffect.schema.json"}
+        }
+    }
+}

@@ -5,6 +5,9 @@
     "properties": {
         "rollmod": {"$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effects/rollmod.schema.json"},
         "statmod": {"$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effects/statmod.schema.json"},
+        "pickrandom": {
+            "type": "string"
+        },
         "flavor": {
             "type": "array",
             "items": {

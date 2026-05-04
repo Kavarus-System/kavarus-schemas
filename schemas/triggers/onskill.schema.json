@@ -9,11 +9,17 @@
         "target": {
             "enum": [
                 "any",
-                "$parent"
+                "$parent",
+                "self",
+                "type.party",
+                "type.enemy",
+                "type.ally",
+                "environment",
+                "object"
             ]
         },
         "action": {
-            "enum": ["cleareffect"]
+            "enum": ["cleareffect","applyeffect","attack","move","cast","hide","any"]
         }
     },
     "dependentRequired": {
