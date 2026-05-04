@@ -5,7 +5,7 @@
     "properties": {
         "effects": {
             "type": "array",
-            "items": {"$ref": "https://raw.githubusercontent.com/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effect.schema.json"}
+            "items": {"$ref": "/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/effect.schema.json"}
         }
     }
 }
