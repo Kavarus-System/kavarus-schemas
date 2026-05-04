@@ -12,18 +12,16 @@
         }
     },
     "if": {
-        "properties": {
-            "group": false
-        }
+        "required": ["group"]
     },
-    "else": {
+    "then": {
         "properties": {
             "odds": {
                 "type": "integer"
             }
         }
     },
-    "then": {
+    "else": {
         "properties": {
             "odds": {
                 "type": "number",
