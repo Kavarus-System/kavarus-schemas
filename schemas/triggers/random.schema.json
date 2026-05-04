@@ -7,22 +7,23 @@
             "type": "string"
         },
         "odds": {
-            "exclusiveMinimum": 0
+            "exclusiveMinimum": 0,
+            "default": 1
         }
     },
     "if": {
         "properties": {
-            "group": true
+            "group": false
         }
     },
-    "then": {
+    "else": {
         "properties": {
             "odds": {
                 "type": "integer"
             }
         }
     },
-    "else": {
+    "then": {
         "properties": {
             "odds": {
                 "type": "number",
