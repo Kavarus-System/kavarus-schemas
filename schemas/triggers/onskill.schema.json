@@ -1,6 +1,20 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/Kavarus-System/kavarus-schemas/refs/heads/main/schemas/triggers/onskill.schema.json",
+    "$defs": {
+        "tags": {
+            "type": "object",
+            "properties": {
+                "tags": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                },
+                "combine": {
+                    "enum": ["any","one"]
+                }
+            }
+        }
+    },
     "type": "object",
     "properties": {
         "checkstat": {
@@ -15,15 +29,34 @@
                 "type.enemy",
                 "type.ally",
                 "environment",
-                "object"
+                "object",
+                "$tagged"
             ]
+        },
+        "targettags": {
+            "type": "object",
+            "properties": {
+                "hastags": {"$ref": "#/$defs/tags"},
+                "missingtags": {"$ref": "#/$defs/tags"}
+            }
         },
         "action": {
             "enum": ["cleareffect","applyeffect","attack","move","cast","hide","any"]
+        },
+        "skilltype": {
+            "type": "string"
         }
     },
     "dependentRequired": {
         "action": ["target"]
+    },
+    "dependentSchemas": {
+        "targettags": {
+            "properties": {
+                "target": {"const": "$tagged"}
+            },
+            "required": ["target"]
+        }
     },
     "minProperties": 1
 }
